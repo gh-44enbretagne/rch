@@ -30,3 +30,4 @@ disks_specs:
     type: thin
     datastore: "{{ datastore }}"
 
+internal_iface: ens160

@@ -1,6 +1,6 @@
 version: 2
 ethernets:
-  ens192:
+  {{ internal_iface }}:
      addresses:
      - {{ hostvars[inventory_hostname].ansible_host }}/{{ rancher_subnet | ipaddr('prefix') }}
      gateway4: {{ gateway }}

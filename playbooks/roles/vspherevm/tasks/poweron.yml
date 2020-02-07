@@ -49,7 +49,7 @@
     cloud-init status
   changed_when: false
   register: res
-  retries: 10
+  retries: 20
   until: |
     res.stdout == "status: done"
 
